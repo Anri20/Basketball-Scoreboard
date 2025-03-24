@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: Cursed Timer ULiL, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 600px;
+    margin: 5rem auto;
+    background-color: #1B244A;
+}
+
+div.sides {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.sides h3{
+    color: #EEEEEE;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+}
