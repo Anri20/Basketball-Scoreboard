@@ -7,6 +7,7 @@ body {
     display: flex;
     justify-content: space-around;
     max-width: 600px;
+    height: 400px;
     margin: 5rem auto;
     background-color: #1B244A;
 }
@@ -22,6 +23,7 @@ div.sides h3{
     color: #EEEEEE;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 40px;
+    margin: 0 0 1rem 0;
 }
 
 span.score {
@@ -30,4 +32,18 @@ span.score {
     color: #F94F6D;
     font-size: 90px;
     background-color: #080001;
+    margin: 0 0 1.5rem 0;
+}
+
+div.btn-container>button {
+    width: 45px;
+    height: 45px;
+    color: #9AABD8;
+    font-family: Cursed Timer ULiL, sans-serif;
+    font-size: 18px;
+    background-color: transparent;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    padding: 5px 0 0 0;
+    cursor: pointer;
 }
