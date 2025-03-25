@@ -27,13 +27,18 @@ div.sides h3{
 }
 
 span.score {
-    text-align: center;
-    padding: 18px 40px 0 40px;
+    width: 160px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #F94F6D;
     font-size: 90px;
     background-color: #080001;
     margin: 0 0 1.5rem 0;
+    padding: 12px 0 0 0;
 }
+
 
 div.btn-container>button {
     width: 45px;
