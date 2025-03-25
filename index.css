@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Cursed Timer ULiL, sans-serif;
+    font-family: Cursed Timer ULiL, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 main {
@@ -30,7 +30,7 @@ div#timer {
     background-color: #080001;
     color: #F94F6D;
     font-size: 60px;
-    padding: 20px 35px 10px 35px;
+    padding: 20px 30px 10px 30px;
     margin: 0 0 2rem 0;
 }
 
@@ -38,7 +38,7 @@ div#timer input {
     width: 2ch;
     background-color: transparent;
     color: #F94F6D;
-    font-family: Cursed Timer ULiL, sans-serif;
+    font-family: Cursed Timer ULiL, Verdana, Geneva, Tahoma, sans-serif;
     font-size: 60px;
     border: none;
     margin: 0;
@@ -78,6 +78,17 @@ span.score {
     padding: 12px 0 0 0;
 }
 
+button.fouls {
+    color: #F94F6D;
+    font-family: Cursed Timer ULiL, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    background-color: #080001;
+    padding: 8px 10px 0 10px;
+    margin: 0 0 1.5rem 0;
+    border: none;
+    cursor: pointer;
+}
+
 button.period {
     width: 80px;
     height: 60px;
@@ -85,7 +96,7 @@ button.period {
     justify-content: center;
     align-items: center;
     color: #F94F6D;
-    font-family: Cursed Timer ULiL, sans-serif;
+    font-family: Cursed Timer ULiL, Verdana, Geneva, Tahoma, sans-serif;
     font-size: 50px;
     background-color: #080001;
     margin: 0 0 1.5rem 0;
@@ -98,7 +109,7 @@ div.btn-container>button {
     width: 45px;
     height: 45px;
     color: #9AABD8;
-    font-family: Cursed Timer ULiL, sans-serif;
+    font-family: Cursed Timer ULiL, Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     background-color: transparent;
     border: 2px solid #9AABD8;

@@ -1,6 +1,7 @@
 function scoreUpdater(containerId) {
     const container = document.getElementById(containerId)
     const btnContainer = container.querySelector(".btn-container")
+    const fouls = container.querySelector(".fouls")
 
     btnContainer.addEventListener("click", function (e) {
         if (e.target.tagName === "BUTTON") {
@@ -24,6 +25,11 @@ function scoreUpdater(containerId) {
             document.getElementById("guest").querySelector("h3").classList.add("highlight")
         }
     })
+
+    fouls.addEventListener("click", (e) => {
+        const currentFoul = parseInt(e.target.textContent)
+        e.target.textContent = currentFoul + 1
+    })
 }
 
 scoreUpdater("home")
@@ -39,7 +45,7 @@ const time1 = document.querySelector("input#time1")
 const time2 = document.querySelector("input#time2")
 let countdown
 
-period.addEventListener("click", function () {
+period.addEventListener("click",() => {
     const currentPeriod = parseInt(period.textContent)
     period.textContent = currentPeriod + 1
 })
@@ -69,7 +75,7 @@ btnStart.addEventListener("click", function () {
     }, 1000)
 })
 
-btnNewGame.addEventListener("click", function () {
+btnNewGame.addEventListener("click",() => {
     clearInterval(countdown)
     time1.value = "00"
     time2.value = "00"
