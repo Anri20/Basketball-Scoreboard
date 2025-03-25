@@ -13,7 +13,7 @@ function scoreUpdater(containerId) {
         const homeScore = document.getElementById("home").querySelector("span.score")
         const guestScore = document.getElementById("guest").querySelector("span.score")
 
-        if(parseInt(homeScore.textContent) === parseInt(guestScore.textContent)){
+        if (parseInt(homeScore.textContent) === parseInt(guestScore.textContent)) {
             document.getElementById("home").querySelector("h3").classList.remove("highlight")
             document.getElementById("guest").querySelector("h3").classList.remove("highlight")
         } else if (parseInt(homeScore.textContent) > parseInt(guestScore.textContent)) {
@@ -28,3 +28,13 @@ function scoreUpdater(containerId) {
 
 scoreUpdater("home")
 scoreUpdater("guest")
+
+function newGame() {
+    const homeScore = document.getElementById("home").querySelector("span.score")
+    const guestScore = document.getElementById("guest").querySelector("span.score")
+
+    homeScore.textContent = 0
+    guestScore.textContent = 0
+    document.getElementById("home").querySelector("h3").classList.remove("highlight")
+    document.getElementById("guest").querySelector("h3").classList.remove("highlight")
+}

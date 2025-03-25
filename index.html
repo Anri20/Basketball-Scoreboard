@@ -11,26 +11,29 @@
 </head>
 
 <body>
-    <div class="container">
-        <div id="home" class="sides">
-            <h3>HOME</h3>
-            <span class="score">0</span>
-            <div class="btn-container">
-                <button>+1</button>
-                <button>+2</button>
-                <button>+3</button>
+    <main>
+        <div class="container">
+            <div id="home" class="sides">
+                <h3>HOME</h3>
+                <span class="score">0</span>
+                <div class="btn-container">
+                    <button>+1</button>
+                    <button>+2</button>
+                    <button>+3</button>
+                </div>
+            </div>
+            <div id="guest" class="sides">
+                <h3>GUEST</h3>
+                <span class="score">0</span>
+                <div class="btn-container">
+                    <button>+1</button>
+                    <button>+2</button>
+                    <button>+3</button>
+                </div>
             </div>
         </div>
-        <div id="guest" class="sides">
-            <h3>GUEST</h3>
-            <span class="score">0</span>
-            <div class="btn-container">
-                <button>+1</button>
-                <button>+2</button>
-                <button>+3</button>
-            </div>
-        </div>
-    </div>
+        <button id="new-game" onclick="newGame()">New Game</button>
+    </main>
     <script src="index.js"></script>
 </body>
 
