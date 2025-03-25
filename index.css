@@ -10,8 +10,9 @@ main {
     align-items: center;
     background-color: #1B244A;
     max-width: 600px;
-    height: 400px;
+    height: fit-content;
     margin: 5rem auto;
+    padding: 40px;
 }
 
 .container {
@@ -24,6 +25,25 @@ main {
     text-shadow: 0 0 10px whitesmoke;
 }
 
+div#timer {
+    display: flex;
+    background-color: #080001;
+    color: #F94F6D;
+    font-size: 60px;
+    padding: 20px 35px 10px 35px;
+    margin: 0 0 2rem 0;
+}
+
+div#timer input {
+    width: 2ch;
+    background-color: transparent;
+    color: #F94F6D;
+    font-family: Cursed Timer ULiL, sans-serif;
+    font-size: 60px;
+    border: none;
+    margin: 0;
+}
+
 div.sides {
     display: flex;
     flex-direction: column;
@@ -31,14 +51,14 @@ div.sides {
     align-items: center;
 }
 
-div.sides h3{
+div.sides h3 {
     color: #EEEEEE;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 40px;
     margin: 0 0 1rem 0;
 }
 
-div.sides h4{
+div.sides h4 {
     color: #EEEEEE;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
@@ -87,7 +107,7 @@ div.btn-container>button {
     cursor: pointer;
 }
 
-#new-game {
+#start, #new-game {
     height: 2.5rem;
     color: #9AABD8;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -97,5 +117,6 @@ div.btn-container>button {
     border: 2px solid #9AABD8;
     border-radius: 5px;
     padding: 0 1rem;
+    margin: 20px 0 0 0;
     cursor: pointer;
 }
