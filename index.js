@@ -7,11 +7,24 @@ function scoreUpdater(containerId) {
             const value = parseInt(e.target.textContent)
             const scoreBoard = container.querySelector("span.score")
             const currentScore = parseInt(scoreBoard.textContent)
-            scoreBoard.textContent = currentScore +  value
+            scoreBoard.textContent = currentScore + value
+        }
+
+        const homeScore = document.getElementById("home").querySelector("span.score")
+        const guestScore = document.getElementById("guest").querySelector("span.score")
+
+        if(parseInt(homeScore.textContent) === parseInt(guestScore.textContent)){
+            document.getElementById("home").querySelector("h3").classList.remove("highlight")
+            document.getElementById("guest").querySelector("h3").classList.remove("highlight")
+        } else if (parseInt(homeScore.textContent) > parseInt(guestScore.textContent)) {
+            document.getElementById("guest").querySelector("h3").classList.remove("highlight")
+            document.getElementById("home").querySelector("h3").classList.add("highlight")
+        } else if (parseInt(homeScore.textContent) < parseInt(guestScore.textContent)) {
+            document.getElementById("home").querySelector("h3").classList.remove("highlight")
+            document.getElementById("guest").querySelector("h3").classList.add("highlight")
         }
     })
 }
-
 
 scoreUpdater("home")
 scoreUpdater("guest")

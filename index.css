@@ -12,6 +12,10 @@ body {
     background-color: #1B244A;
 }
 
+.highlight {
+    text-shadow: 0 0 10px whitesmoke;
+}
+
 div.sides {
     display: flex;
     flex-direction: column;
