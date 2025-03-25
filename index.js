@@ -29,12 +29,23 @@ function scoreUpdater(containerId) {
 scoreUpdater("home")
 scoreUpdater("guest")
 
-function newGame() {
+
+const period = document.querySelector("button.period")
+
+const btnNewGame = document.querySelector("button#new-game")
+
+btnNewGame.addEventListener("click", function () {
     const homeScore = document.getElementById("home").querySelector("span.score")
     const guestScore = document.getElementById("guest").querySelector("span.score")
 
+    period.textContent = 0
     homeScore.textContent = 0
     guestScore.textContent = 0
     document.getElementById("home").querySelector("h3").classList.remove("highlight")
     document.getElementById("guest").querySelector("h3").classList.remove("highlight")
-}
+})
+
+period.addEventListener("click", function() {
+    const currentPeriod = parseInt(period.textContent)
+    period.textContent = currentPeriod + 1
+})
